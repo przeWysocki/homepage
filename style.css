@@ -12,6 +12,20 @@ body {
     color:#e7e421;
 }
 
+.section-heading {
+    color: #3376b6;
+}
+
+.article-heading {
+    color: #3376b6;
+}
+
+.special-heading {
+    color:pink
+}
+
+.nav-header {}
+
 
 .top-navigation {
     background: #3376b6;
@@ -21,17 +35,13 @@ body {
     color: #e7e421;
 }
 
-.nav-header {}
+.special-link {
+    color:pink
+}
+
 
 .site-footer {
     background: #3376b6;
     color: #e7e421;
 }
 
-.section-header {
-    color: #3376b6;
-}
-
-.article-header {
-    color: #3376b6;
-}
