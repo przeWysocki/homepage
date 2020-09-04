@@ -1,47 +1,48 @@
+
+STYLUJ ALFABETYCZNIE@@@@@@@@@@!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+
 body {
-    background: #9ccdff;
+  background:#a0b2da;
 }
 
-.main-section {}
+.main-section {
+}
 
 .main-header {
-    
 }
 
 .main-heading {
-    color:#e7e421;
+  color: #e7e421;
 }
 
 .section-heading {
-    color: #3376b6;
+  color: #3376b6;
 }
 
 .article-heading {
-    color: #3376b6;
+  color: #3376b6;
 }
 
 .special-heading {
-    color:pink
+  color: pink;
 }
 
-.nav-header {}
-
+.nav-header {
+}
 
 .top-navigation {
-    background: #3376b6;
+  background: #3376b6;
 }
 
 .top-nav-link {
-    color: #e7e421;
+  color: #e7e421;
 }
 
 .special-link {
-    color:pink
+  color: pink;
 }
-
 
 .site-footer {
-    background: #3376b6;
-    color: #e7e421;
+  background: #3376b6;
+  color: #e7e421;
 }
-
