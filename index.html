@@ -12,78 +12,58 @@
     <header class="header">
       <nav class="navigation">
         <a class="navigation__link" href="index.html">Strona główna</a>
-        <a class="navigation__link" href="about-me.html">O mnie</a>
-        <a class="navigation__link navigation__link--special" href="recipes.html">Przepisy</a>
-        <a class="navigation__link" href="sourdough.html">Zakwas</a>
-        <a class="navigation__link" href="contact.html">Kontakt</a>
+        <a class="navigation__link" href="#about">O nas</a>
+        <a class="navigation__link" href="#sourdough">Zakwas</a>
+        <a class="navigation__link navigation__link--special" href="#recipes">Przepisy</a>
+        <a class="navigation__link" href="#contact">Kontakt</a>
       </nav>
     </header>
 
-    <main id="top">
-      <header class="main-header">
-        <h1 class="main-heading">Co tam man?</h1>
+    <main id="top" class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Chlebowe.info</h1>
       </header>
 
-      <section class="special-section">
-        <h2 class="special-heading">
-          <a class="special-link" href="special-site.html"
-            >Uwaga, kliknij tutaj</a
-          >
-        </h2>
-      </section>
+      <header class="main__second-header">
+          <h2 class="main__second-heading">Dzielimy się smakiem chleba</h2>
+      </header>
 
-      <section class="main-section">
-        <h2 class="section-heading">O mnie</h2>
-        <article>
-          <h3 class="article-heading">Krótko o mnie</h3>
-          <p>
+
+      <section class="about" id ="about">
+        <h3 class="about__heading">O chlebie i o mnie</h2>
+        <article class="about__article">
+          <h4 class="about__article-heading">Krótka historia chleba</h3>
+          <p class="about__paraghraph">
             Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje Cie
-            to, kim jestem, to możesz poczytać
-            <a href="about-me.html">o mnie więcej na tej stronie</a>.
+            to, kim jestem, to możesz poczytać.
+          </p>
+        </article>
+        <article class="about__article">
+          <h4 class="about__article-heading">Moja krótka historia</h3>
+          <p class="about__paraghraph">
+            Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje Cie
+            to, kim jestem, to możesz poczytać.
           </p>
         </article>
       </section>
 
-      <section class="main-section">
-        <h2 class="section-heading">WTF z tygodnia na tydzień</h2>
-        <article class="normal-article">
-          <h3 class="article-heading">Tydzień 2</h3>
-          <p>
+      <section class="sourdough" id="sourdough">
+        <h3 class="sourdough__heading">Co nieco o zakwasie</h2>
+        <article class="sourdough__article">
+          <h4 class="sourdough__article-heading">Tydzień 2</h3>
+          <p class="sourdough__paragraph">
             W tym tygodniu raczej nie dużo się dzieje, ale zobacze jak dużo
             nauki było już w <a href="#third-week">trzecim tygodniu</a>
           </p>
-          <h4>Do zapamiętania z drugiego jest raczej:</h4>
-          <ol>
-            <li>! + tab = deklaracja doctype w VSC</li>
-            <li>ctrl+shift+p = format document</li>
-          </ol>
-        </article>
-        <article>
-          <h3 class="article-heading" id="third-week">Tydzień 3</h3>
-          <h4>Coś o HTML</h4>
-          <p>
-            Z HTML wymienione zostały znaczniki br, b, i, strong, em, a. Była
-            mowa o atrybutach (czyli np. href, src). Tworzono nawigację za
-            pomocą id.
-          </p>
-          <h4>Coś o CSS</h4>
-          <p>
-            Jak nazywać w CSS, np. camesCase, kebab-case. JAk stylować,np.
-            poprzez id czy klasy. Było o łączeniu selektorów i specyficzności,
-            czyli hierarchii ważności w stylowaniu
-          </p>
-          <h4>Coś o przeglądarce</h4>
-          <p>Jak działa przeglądarka -request - response. Co to jest HTTP.</p>
-          <h4>Coś o JavaScript</h4>
-          <p>
-            Z czego się składa. Polecenia alert, console.log. Ustalanie zmiennej
-            const name =',,,';. Literały ````
-          </p>
-          <h4>Coś o terminalu - wierszu poleceń</h4>
+          <h4 class="sourdough__article-heading">Tydzień 2</h3>
+            <p class="sourdough__paragraph">
+              W tym tygodniu raczej nie dużo się dzieje, ale zobacze jak dużo
+              nauki było już w <a href="#third-week">trzecim tygodniu</a>
+            </p>
         </article>
       </section>
     </main>
-    <footer class="site-footer">
+    <footer class="footer">
       Made by PrzemO2020 <a href="#top">Wróć do góry strony</a>
     </footer>
   </body>

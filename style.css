@@ -8,12 +8,22 @@ body {
 .main-section {
 }
 
-.main-header {
+.main__header {
+  min-width: 300px;
+  min-height: 200px;
+  margin: auto auto; 
+  
 }
 
-.main-heading {
-  color: #e7e421;
+.main__heading {
+  color: #683b42b6;
+  display:block;
+  width: 200px;
+  min-height: 50px;
+  margin: 20px auto;
+
 }
+
 
 .section-heading {
   color: #3376b6;
