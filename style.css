@@ -1,58 +1,89 @@
 
-STYLUJ ALFABETYCZNIE@@@@@@@@@@!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+
+
+
+.about {}
+
+.about__section {}
+
+.about__heading {}
+
+.about__article {}
+
+.about__article-heading {}
+
+.about__paragraph {}
 
 body {
   background:#a0b2da;
 }
 
-.main-section {
+.contact {}
+
+.header {
+  width:600px;
+  margin: 0 auto;
+text-align: center;
+}
+
+
+.main{
+  width:600px;
+  margin: 0 auto;
 }
 
 .main__header {
-  min-width: 300px;
-  min-height: 200px;
-  margin: auto auto; 
   
 }
 
 .main__heading {
   color: #683b42b6;
-  display:block;
-  width: 200px;
-  min-height: 50px;
-  margin: 20px auto;
-
+  text-align:center;
 }
 
+.main__second-header {}
 
-.section-heading {
-  color: #3376b6;
+.main__second-heading {
+  color: #683b42b6;
+  text-align:center;
 }
 
-.article-heading {
-  color: #3376b6;
+.navigation {}
+
+.navigation__link {}
+
+.recipes {}
+
+.recipes__section {}
+
+.recipes__heading {
+  color:pink;
 }
 
-.special-heading {
-  color: pink;
+.recipes__article {}
+
+.recipes__article-heading {}
+
+.recipes__paragraph {}
+
+.section {
+  
 }
 
-.nav-header {
-}
+.sourdough {}
 
-.top-navigation {
-  background: #3376b6;
-}
+.sourdough__section {}
 
-.top-nav-link {
-  color: #e7e421;
-}
+.sourdough__heading {}
 
-.special-link {
-  color: pink;
-}
+.sourdough__article {}
 
-.site-footer {
-  background: #3376b6;
-  color: #e7e421;
+.sourdough__article-heading {}
+
+.sourdough__paragraph {}
+
+.footer {
+  width: 600px;
+  margin: 0 auto;
+  text-align:center;
 }
