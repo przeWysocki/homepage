@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WTF - lekcje</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="main.js"></script>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -22,25 +22,22 @@
     <main class="main">
       <header class="main__header">
         <h1 class="main__heading">Chlebowe.info</h1>
-      </header>
-
-      <header class="main__second-header">
-          <h2 class="main__second-heading">Dzielimy się smakiem chleba</h2>
+        <p class="main__paragraph">Dzielimy się smakiem chleba</p>
       </header>
 
 
       <section class="about section" id ="about">
-        <h3 class="about__heading">O chlebie i o mnie</h2>
+        <h3 class="about__heading">O chlebie i o mnie</h3>
         <article class="about__article">
-          <h4 class="about__article-heading">Krótka historia chleba</h3>
-          <p class="about__paraghraph">
+          <h4 class="about__article-heading">Krótka historia chleba</h4>
+          <p class="about__description">
             Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje Cie
             to, kim jestem, to możesz poczytać.
           </p>
         </article>
         <article class="about__article">
-          <h4 class="about__article-heading">Moja krótka historia</h3>
-          <p class="about__paraghraph">
+          <h4 class="about__article-heading">Moja krótka historia</h4>
+          <p class="about__description">
             Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje Cie
             to, kim jestem, to możesz poczytać.
           </p>
@@ -48,15 +45,15 @@
       </section>
 
       <section class="sourdough section" id="sourdough">
-        <h3 class="sourdough__heading">Co nieco o zakwasie</h2>
+        <h3 class="sourdough__heading">Co nieco o zakwasie</h3>
         <article class="sourdough__article">
-          <h4 class="sourdough__article-heading">Zakwas faza 1</h3>
-          <p class="sourdough__paragraph">
+          <h4 class="sourdough__article-heading">Zakwas faza 1</h4>
+          <p class="sourdough__description">
             W tym tygodniu raczej nie dużo się dzieje, ale zobacze jak dużo
             nauki było już w trzecim tygodniu
           </p>
-          <h4 class="sourdough__article-heading">Zakwas faza 2</h3>
-            <p class="sourdough__paragraph">
+          <h4 class="sourdough__article-heading">Zakwas faza 2</h4>
+            <p class="sourdough__description">
               W tym tygodniu raczej nie dużo się dzieje, ale zobacze jak dużo
               nauki było już w trzecim tygodniu
             </p>
@@ -64,20 +61,21 @@
       </section>
     
       <section class="recipes section" id ="recipes">
-        <h3 class="recipes__heading">O chlebie i o mnie</h2>
+        <h3 class="recipes__heading">O chlebie i o mnie</h3>
         <article class="recipes__article">
-          <h4 class="recipes__article-heading">Krótka historia chleba</h3>
-          <p class="recipes__paraghraph">
+          <h4 class="recipes__article-heading">Krótka historia chleba</h4>
+          <p class="recipes__description">
             Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje Cie
             to, kim jestem, to możesz poczytać.
           </p>
         </article>
         <article class="recipes__article ">
-          <h4 class="recipes__article-heading">Moja krótka historia</h3>
-          <p class="recipes__paraghraph">
+          <h4 class="recipes__article-heading">Moja krótka historia</h4>
+          <p class="recipes__description">
             Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje Cie
             to, kim jestem, to możesz poczytać.
           </p>
+        <p class="recipes__description recipes__description--js"></p>
         </article>
       </section>
 
@@ -89,7 +87,9 @@
     
     </main>
     <footer class="footer">
-      Made by PrzemO2020 <a href="#top">Wróć do góry strony</a>
+      Made by PrzemO2020 <a class="footer__link" href="#top">Wróć do góry strony</a>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

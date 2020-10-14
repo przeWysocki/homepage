@@ -12,24 +12,35 @@
 
 .about__article-heading {}
 
-.about__paragraph {}
+.about__description {}
 
 body {
-  background:#a0b2da;
+  background:#e4dcbb;
 }
 
 .contact {}
 
 .header {
-  width:600px;
-  margin: 0 auto;
-text-align: center;
+  background-color:#6b5004 ;
+  display: flex; 
+  flex-flow: column wrap;
+  align-items: center; 
+  
+  
+  
+
+
 }
 
+html {
+  color:#312402
+}
 
-.main{
-  width:600px;
-  margin: 0 auto;
+.main {
+  display:flex;
+  flex-flow: column wrap; 
+  align-content: center;
+
 }
 
 .main__header {
@@ -48,23 +59,33 @@ text-align: center;
   text-align:center;
 }
 
-.navigation {}
+.navigation {
+  
 
-.navigation__link {}
+
+}
+
+.navigation__link {
+  color:#e7e1e2;
+  text-decoration: none;
+  padding: 4px;
+  
+  
+}
 
 .recipes {}
 
 .recipes__section {}
 
 .recipes__heading {
-  color:pink;
+  color: #312402;
 }
 
 .recipes__article {}
 
 .recipes__article-heading {}
 
-.recipes__paragraph {}
+.recipes__description {}
 
 .section {
   
@@ -80,10 +101,18 @@ text-align: center;
 
 .sourdough__article-heading {}
 
-.sourdough__paragraph {}
+.sourdough__description {}
 
 .footer {
-  width: 600px;
-  margin: 0 auto;
-  text-align:center;
+ background-color: #312402;
+ display: flex;
+ flex-flow: column wrap;
+ align-content: center;
+ color: #fff;
+ text-decoration: none;
+}
+
+.footer__link {
+  color: rgb(231, 197, 159);
+ text-decoration: none;
 }
