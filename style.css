@@ -10,8 +10,10 @@ html {
    margin:12px;
  }
 
-.about {}
-
+.about {
+ grid-area: about;
+ background-color: rgba(168, 94, 94, 0.5);
+}
 .about__article {}
 
 .about__article-heading {
@@ -27,6 +29,7 @@ html {
   width:300px;
  margin:16px;
  border-radius:16px;
+
  
 }
 
@@ -40,23 +43,33 @@ html {
 .about__description {}
 
 body {
-  background-image:url("bakery.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+ 
 }
 
-.contact {}
+.contact {
+  grid-area:contact;
+  background-color: rgba(218, 13, 13, 0.5);
+}
 
 .header {
-  display: flex; 
-  justify-content: center;
-  align-items:center;
-  background:rgba(83, 55, 19, 0.3);
-  backdrop-filter: blur(20px);
-  min-height:40px;
   margin-bottom:16px;
-  position:sticky;
-top:0;
+}
+
+.header__heading {
+  color: #000;
+  text-align:center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin: 0;
+   
+}
+
+.header__paragraph {
+  color: #000;
+  text-align:center;
+  margin:0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
 }
 
 .headings {
@@ -69,17 +82,16 @@ top:0;
   text-align: center;
 }
 
-.flex {
- display:flex;
- align-content: center;
- align-items: center;
- flex-flow: column wrap;
- padding-top:16px;
-}
 
 
 .main {
   font-family: 'Lato', sans-serif;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:"about" "sourdough" "recipes" "contact";
+  width:100%;
+  
 
 }
 
@@ -88,12 +100,7 @@ top:0;
 }
 
 .main__heading {
-  color: #000;
-  text-align:center;
-  font-family: 'Dancing Script', cursive;
-  font-size: 80px;
-  margin: 0;
-  padding-top: 16px; 
+  
 }
 
 .main__heading:hover {
@@ -103,11 +110,7 @@ font-weight:bold;
 
 
 .main__paragraph {
-  color: #000;
-  text-align:center;
-  margin:0;
-  font-family: 'Dancing Script', cursive;
-  font-size: 30px;
+
   
 }
 
@@ -118,17 +121,19 @@ font-weight:bold;
 
 
 .navigation {
-  display:flex;
-  flex-flow: row wrap;
-  width: 720px;
-  justify-content: center;
+  display:inline-block;
+  text-align:center;
+  backdrop-filter: blur(20px);
+  min-height:35px;
+  position:sticky;
+  top:0;
   
 }
 
 .navigation__link {
   color:#000;
   text-decoration: none;
-  padding: 0 16px 0 16px;
+  padding: 0 8px 0 8px;
   text-transform: uppercase;
   font-family: 'Dancing Script', cursive;
  
@@ -142,7 +147,10 @@ font-weight:bold;
 
 
 
-.recipes {}
+.recipes {
+  grid-area:recipes;
+  background-color: rgba(214, 159, 159, 0.5);
+}
 
 .recipes__section {}
 
@@ -155,16 +163,19 @@ font-weight:bold;
 .recipes__description {}
 
 .section {
-  border:  2px dotted black;
-  max-width: 640px;
-  border-radius:32px;
+ 
+
   padding:16px;
-  margin:16px;
-  background-color: rgba(255, 255, 255, 0.171);
+
+  
   text-align: left;
+  min-height:10vh;
 }
 
-.sourdough {}
+.sourdough {
+grid-area:sourdough;
+background-color: rgba(167, 29, 29, 0.719);
+}
 
 .sourdough__section {}
 
@@ -178,8 +189,6 @@ font-weight:bold;
 
 .footer {
  background-color: #312402;
- display: flex;
-justify-content: center;
  color: #fff;
  text-decoration: none;
 }
