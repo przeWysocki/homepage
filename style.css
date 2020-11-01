@@ -1,154 +1,137 @@
 html {
-  box-sizing:border-box;
- }
- 
- *, *:before, *:after {
-   box-sizing: inherit;
- }
+  box-sizing: border-box;
+  
+}
 
- h3, h4 {
-   margin:12px;
- }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 .about {
- grid-area: about;
- background-color: rgba(168, 94, 94, 0.5);
-}
-.about__article {}
-
-.about__article-heading {
-  padding-top:16px;
-}
-
-.about__heading {}
-
-.about__section {}
-
-.about__photo {
-  float:left;
-  width:300px;
- margin:16px;
- border-radius:16px;
-
+  grid-area: about;
+  background-color: rgba(214, 159, 159, 0.5);
  
 }
 
+.about__article {}
 
 
-.about__photo:hover {
-  opacity:75%;
+
+.about__photo {
+  max-width:320px;
 }
 
+.about__photo:hover {
+  opacity: 75%;
+}
 
 .about__description {}
 
-body {
- 
-}
+body {}
 
 .contact {
-  grid-area:contact;
-  background-color: rgba(218, 13, 13, 0.5);
+  grid-area: contact;
+  background-color: rgba(214, 159, 159, 0.781);
 }
 
 .header {
-  margin-bottom:16px;
+  margin-bottom: 16px;
+  
+}
+
+.dashed {
+  border-bottom: 3px dotted rgba(218, 13, 13, 0.5);
+  position: sticky;
+  top: 35px;
+  
 }
 
 .header__heading {
   color: #000;
-  text-align:center;
+  text-align: center;
   font-family: 'Dancing Script', cursive;
   font-size: 80px;
   margin: 0;
-   
+  line-height: 1.10;
+  padding-top:35px;
 }
 
 .header__paragraph {
   color: #000;
-  text-align:center;
-  margin:0;
+  text-align: center;
+  margin: 0;
   font-family: 'Dancing Script', cursive;
   font-size: 30px;
 }
 
 .headings {
   text-align: center;
-  font-size:24px;
-  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-family:'Dancing Script', cursive;
+  margin:0;
+ 
 }
+
 
 .little-headings {
   text-align: center;
+  margin:8px;
 }
-
-
 
 .main {
   font-family: 'Lato', sans-serif;
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:"about" "sourdough" "recipes" "contact";
-  width:100%;
-  
-
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr 64px 1fr 64px 1fr 64px 1fr;
+  grid-template-areas: "about" "clown" "sourdough" "nose" "recipes" "tits" "contact";
+  width: 100%;
+  background-image:url(bakery.jpg);
+background-position: center;
+background-size:cover;
 }
 
-.main__header {
-  
-}
 
-.main__heading {
-  
-}
+
+
+
+.main__header {}
+
+.main__heading {}
 
 .main__heading:hover {
-color:#9e6820 ;
-font-weight:bold;
+  color: #9e6820;
+  font-weight: bold;
 }
 
+.main__paragraph {}
 
-.main__paragraph {
-
-  
-}
-
-.main__paragraph:hover {
- 
-  
-}
-
+.main__paragraph:hover {}
 
 .navigation {
-  display:inline-block;
-  text-align:center;
+  display: inline-block;
+  text-align: center;
   backdrop-filter: blur(20px);
-  min-height:35px;
-  position:sticky;
-  top:0;
-  
+  min-height: 35px;
+  position: fixed;
+  top: 0;
 }
 
 .navigation__link {
-  color:#000;
+  color: #000;
   text-decoration: none;
   padding: 0 8px 0 8px;
   text-transform: uppercase;
   font-family: 'Dancing Script', cursive;
- 
 }
 
 .navigation__link:hover {
-  color:#e98f1b ;
-  font-weight:bold;
-  
+  color: #e98f1b;
+  font-weight: bold;
 }
 
-
-
 .recipes {
-  grid-area:recipes;
+  grid-area: recipes;
   background-color: rgba(214, 159, 159, 0.5);
 }
 
@@ -163,18 +146,15 @@ font-weight:bold;
 .recipes__description {}
 
 .section {
- 
-
-  padding:16px;
-
-  
+  padding: 16px;
   text-align: left;
-  min-height:10vh;
+  min-height: 10vh;
 }
 
 .sourdough {
-grid-area:sourdough;
-background-color: rgba(167, 29, 29, 0.719);
+  grid-area: sourdough;
+  background-color: rgba(214, 159, 159, 0.5);
+
 }
 
 .sourdough__section {}
@@ -188,12 +168,27 @@ background-color: rgba(167, 29, 29, 0.719);
 .sourdough__description {}
 
 .footer {
- background-color: #312402;
- color: #fff;
- text-decoration: none;
+  background-color: #312402;
+  color: #fff;
+  text-decoration: none;
+  
 }
 
 .footer__link {
-  color: rgb(231, 197, 159);
- text-decoration: none;
+  color: rgb(95, 85, 73);
+  text-decoration: none;
+  
+}
+
+.fars {
+font-size:1,5rem;
+position:fixed;
+bottom: 36px;
+right:24px;
+
+}
+
+.fa {
+  color:black;
+  
 }
