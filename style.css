@@ -1,43 +1,30 @@
 html {
   box-sizing: border-box;
-  
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-
 .about {
   grid-area: about;
   background-color: rgba(214, 159, 159, 0.5);
- 
 }
 
 .about__article {}
-
-
-
-.about__photo {
-  max-width:320px;
-}
 
 .about__photo:hover {
   opacity: 75%;
 }
 
-.about__description {}
-
 body {}
 
-.blush {
-  display:inline;
-}
-
-
-.blush__photo {
-  width:170px;
-  display:inline;
+.bread-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .contact {
@@ -45,22 +32,38 @@ body {}
   background-color: rgba(214, 159, 159, 0.781);
 }
 
-.header {
-  margin-bottom: 16px;
-  min-height:100vh;
-  display:flex;
-  flex-flow:column wrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom:64px;
-  
+
+
+.fars {
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 36px;
+  right: 24px;
 }
 
-.dashed {
-  border-bottom: 3px dotted rgba(218, 13, 13, 0.5);
-  position: sticky;
-  top: 35px;
-  
+.fa {
+  color: black;
+}
+
+.footer {
+  background-color: #312402;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__link {
+  color: rgb(95, 85, 73);
+  text-decoration: none;
+}
+
+.header {
+  margin-bottom: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
 }
 
 .header__heading {
@@ -70,11 +73,18 @@ body {}
   font-size: 80px;
   margin: 0;
   line-height: 1.10;
-  padding-top:35px;
   background-image: url(wypieki.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.header__navigation {
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(20px);
 }
 
 .header__paragraph {
@@ -88,15 +98,13 @@ body {}
 .headings {
   text-align: center;
   font-size: 30px;
-  font-family:'Dancing Script', cursive;
-  margin:0;
- 
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
 }
-
 
 .little-headings {
   text-align: center;
-  margin:8px;
+  margin: 8px;
 }
 
 .main {
@@ -106,64 +114,42 @@ body {}
   grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 100vh;
   grid-template-areas: "about" "clown" "sourdough" "nose" "recipes" "tits" "contact";
   width: 100%;
-  background-image:url(bakery.jpg);
-background-position: center;
-background-size:cover;
+  background-image: url(bakery.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
-
-
-
-
-.main__header {}
-
-.main__heading {}
-
-.main__heading:hover {
-  color: #9e6820;
-  font-weight: bold;
-}
-
-.main__paragraph {}
-
-.main__paragraph:hover {}
 
 .navigation {
-  display: inline-block;
-  text-align: center;
-  backdrop-filter: blur(20px);
-  min-height: 35px;
-  position: fixed;
-  top: 0;
+  padding: 16px;
+  display:none;
 }
 
 .navigation__link {
+  display: block;
   color: #000;
   text-decoration: none;
-  padding: 0 8px 0 8px;
-  text-transform: uppercase;
+  padding: 16px 0 16px 0;
+  font-size: 32px;
   font-family: 'Dancing Script', cursive;
 }
 
 .navigation__link:hover {
-  color: #e98f1b;
+  color: #641c0ab9;
   font-weight: bold;
 }
+
+.navigation--open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .recipes {
   grid-area: recipes;
   background-color: rgba(214, 159, 159, 0.5);
 }
-
-.recipes__section {}
-
-.recipes__heading {}
-
-.recipes__article {}
-
-.recipes__article-heading {}
-
-.recipes__description {}
 
 .section {
   padding: 16px;
@@ -174,41 +160,64 @@ background-size:cover;
 .sourdough {
   grid-area: sourdough;
   background-color: rgba(214, 159, 159, 0.5);
-
 }
 
-.sourdough__section {}
-
-.sourdough__heading {}
-
-.sourdough__article {}
-
-.sourdough__article-heading {}
-
-.sourdough__description {}
-
-.footer {
-  background-color: #312402;
-  color: #fff;
-  text-decoration: none;
-  
+@media screen and (min-width: 768px) {
+  .bread-menu {
+    display: none;
+  }
+  .header__heading {
+    font-size: 110px;
+  }
+  .header__paragraph {
+    font-size: 50px;
+  }
+  .fars {
+    position: fixed;
+    font-size: 2rem;
+  }
+  .navigation {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer__link {
-  color: rgb(95, 85, 73);
-  text-decoration: none;
-  
+.navigation__link {
+  padding:0 16px 0 16px;
 }
 
-.fars {
-font-size:1,5rem;
-position:fixed;
-bottom: 36px;
-right:24px;
 
+.dashed {
+  border-bottom: 3px dotted rgba(218, 13, 13, 0.5);
+  position: sticky;
+  top: 110px;
 }
 
-.fa {
-  color:black;
-  
+
+
+@media screen and (min-width: 1024px) {
+  .header__heading {
+    font-size: 150px;
+  }
+  .header__paragraph {
+    font-size: 65px;
+  }
+  .fars {
+    font-size: 2.5rem;
+    
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header__heading {
+    font-size: 170px;
+  }
+  .header__paragraph {
+    font-size: 80px;
+  }
+  .fars {
+    font-size: 3rem;
+   
+  }
 }

@@ -14,25 +14,30 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous"
         >
+       
     </head>
+  
     <body id="top">
-        <nav class="navigation">
-            <a class="navigation__link" href="index.html">Home</a>
-            <a class="navigation__link" href="#about">O nas</a>
-            <a class="navigation__link" href="#sourdough">Zakwas</a>
-            <a class="navigation__link" href="#recipes">Menu</a>
-            <a class="navigation__link" href="#contact">Kontakt</a>
-        </nav>
-        <header class="header">    
+    
+        <header class="header__navigation">
+            <button class="bread-menu bread-menu--js" aria-label="Otwórz menu"><img src="mini-bread.png"/></button>
+            <nav class="navigation navigation--js">
+                <a class="navigation__link" href="index.html">Home</a>
+                <a class="navigation__link" href="#about">O nas</a>
+                <a class="navigation__link" href="#sourdough">Zakwas</a>
+                <a class="navigation__link" href="#recipes">Menu</a>
+                <a class="navigation__link" href="#contact">Kontakt</a>
+            </nav>
+        </header>
+        <header class="header">
             <h1 class="header__heading">Chlebowe wypieki</h1>
-            <p class="header__paragraph">...dzielmy się smakiem chleba</p>
+            <p class="header__paragraph">...zawstydzą Cię smakiem</p>
         </header>
         <div class="dashed"></div>
         <main class="main">
             <section class="about section" id="about">
                 <h3 class="about__heading headings">O nas</h3>
                 <article class="about__article">
-                    
                     <h4 class="about__article-heading little-headings">Krótka historia chleba</h4>
                     <p class="about__description">
                         Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje
@@ -83,11 +88,15 @@
             </section>
             <section class="contact section" id="contact">Kontakt</section>
         </main>
-        
-        <div class="fars"><a href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
+        <div class="fars">
+            <a href="#top">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </a>
+        </div>
         <footer class="footer">
             Made by PrzemO2020
         </footer>
-        <script src="main.js"></script>
+        
     </body>
+    <script src="main.js"></script>
 </html>
