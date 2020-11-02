@@ -30,6 +30,16 @@ html {
 
 body {}
 
+.blush {
+  display:inline;
+}
+
+
+.blush__photo {
+  width:170px;
+  display:inline;
+}
+
 .contact {
   grid-area: contact;
   background-color: rgba(214, 159, 159, 0.781);
@@ -37,6 +47,12 @@ body {}
 
 .header {
   margin-bottom: 16px;
+  min-height:100vh;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:64px;
   
 }
 
@@ -55,6 +71,10 @@ body {}
   margin: 0;
   line-height: 1.10;
   padding-top:35px;
+  background-image: url(wypieki.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .header__paragraph {
@@ -83,7 +103,7 @@ body {}
   font-family: 'Lato', sans-serif;
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: 1fr 64px 1fr 64px 1fr 64px 1fr;
+  grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 100vh;
   grid-template-areas: "about" "clown" "sourdough" "nose" "recipes" "tits" "contact";
   width: 100%;
   background-image:url(bakery.jpg);
