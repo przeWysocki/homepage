@@ -37,8 +37,8 @@ const greetings = {
 }
 greetings.infos (`50%`, `Tytus`);
 
-Może napisać to z ifem.. Ale najpierw utworzyć klasy z modyfikatorem js w kodzie html, tam gdzie są te linki,
-pozniej dac tam, ze jesli zostanie klikniety link button sie chowa
+/*Może napisać to z ifem.. Ale najpierw utworzyć klasy z modyfikatorem js w kodzie html, tam gdzie są te linki,
+pozniej dac tam, ze jesli zostanie klikniety link button sie chowa*/
 
 
 const breadMenu = document.querySelector('.bread-menu--js');

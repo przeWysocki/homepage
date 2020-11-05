@@ -9,7 +9,7 @@ html {
 .about {
   grid-area: about;
   background-color: rgba(214, 159, 159, 0.5); }
-  .about__photo:hover {
+  .about__:hover {
     opacity: 75%; }
 
 .bread-menu {
@@ -57,37 +57,41 @@ html {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
+  .header__paragraph {
+    color: #000;
+    text-align: center;
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px; }
 
-.header__paragraph {
-  color: #000;
-  text-align: center;
-  margin: 0;
-  font-family: "Dancing Script", cursive;
-  font-size: 30px; }
+.header__navigation {
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(20px); }
 
 .headings {
   text-align: center;
   font-size: 30px;
   font-family: 'Dancing Script', cursive;
   margin: 0 16px 0 16px; }
-
-.headings::before {
-  width: 10px;
-  height: 10px;
-  border: 3px solid black;
-  border-radius: 50%;
-  display: inline-block;
-  content: "";
-  margin-right: 32px; }
-
-.headings::after {
-  width: 10px;
-  height: 10px;
-  border: 3px solid black;
-  border-radius: 50%;
-  display: inline-block;
-  content: "";
-  margin-left: 32px; }
+  .headings::before {
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-right: 32px; }
+  .headings::after {
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-left: 32px; }
 
 .little-headings {
   text-align: center;
@@ -114,10 +118,9 @@ html {
     padding: 16px 0 16px 0;
     font-size: 32px;
     font-family: 'Dancing Script', cursive; }
-
-.navigation__link:hover {
-  color: #641c0ab9;
-  font-weight: bold; }
+  .navigation__link:hover {
+    color: #641c0ab9;
+    font-weight: bold; }
 
 .navigation--open {
   display: flex;
@@ -141,10 +144,10 @@ html {
 @media screen and (min-width: 768px) {
   .bread-menu {
     display: none; }
-  __heading {
+  .header__heading {
     font-size: 110px; }
-    __heading__paragraph {
-      font-size: 50px; }
+  .header__paragraph {
+    font-size: 50px; }
   .fars {
     position: fixed;
     font-size: 2rem; }
@@ -158,7 +161,7 @@ html {
   .dashed {
     border-bottom: 6px dotted rgba(218, 13, 167, 0.918);
     position: sticky;
-    top: 60px; } }
+    top: 80px; } }
 
 @media screen and (min-width: 1024px) {
   .header__heading {
