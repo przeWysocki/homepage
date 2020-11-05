@@ -1,23 +1,16 @@
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
 
 .about {
   grid-area: about;
-  background-color: rgba(214, 159, 159, 0.5);
-}
-
-.about__article {}
-
-.about__photo:hover {
-  opacity: 75%;
-}
-
-body {}
+  background-color: rgba(214, 159, 159, 0.5); }
+  .about__photo:hover {
+    opacity: 75%; }
 
 .bread-menu {
   position: absolute;
@@ -25,36 +18,25 @@ body {}
   right: 10px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
-}
+  cursor: pointer; }
 
 .contact {
   grid-area: contact;
-  background-color: rgba(214, 159, 159, 0.781);
-}
-
-
+  background-color: rgba(214, 159, 159, 0.781); }
 
 .fars {
   font-size: 1.5rem;
   position: fixed;
   bottom: 36px;
-  right: 24px;
-}
+  right: 24px; }
 
 .fa {
-  color: black;
-}
+  color: black; }
 
 .footer {
   background-color: #312402;
   color: #fff;
-  text-decoration: none;
-}
-
-.footer__link {
-  color: rgb(95, 85, 73);
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .header {
   margin-bottom: 16px;
@@ -63,49 +45,52 @@ body {}
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 35px;
-}
-
-.header__heading {
-  color: #000;
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  font-size: 80px;
-  margin: 0;
-  line-height: 1.10;
-  background-image: url(wypieki.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.header__navigation {
-  min-height: 80px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  backdrop-filter: blur(20px);
-}
-
-.header__paragraph {
-  color: #000;
-  text-align: center;
-  margin: 0;
-  font-family: 'Dancing Script', cursive;
-  font-size: 30px;
-}
+  padding-bottom: 35px; }
+  .header__heading {
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 80px;
+    margin: 0;
+    line-height: 1.1;
+    background-image: url(wypieki.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .header__heading__paragraph {
+      color: #000;
+      text-align: center;
+      margin: 0;
+      font-family: "Dancing Script", cursive;
+      font-size: 30px; }
 
 .headings {
   text-align: center;
   font-size: 30px;
   font-family: 'Dancing Script', cursive;
-  margin: 0;
-}
+  margin: 0 16px 0 16px; }
+
+.headings::before {
+  width: 10px;
+  height: 10px;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  margin-right: 32px; }
+
+.headings::after {
+  width: 10px;
+  height: 10px;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  margin-left: 32px; }
 
 .little-headings {
   text-align: center;
-  margin: 8px;
-}
+  margin: 8px; }
 
 .main {
   font-family: 'Lato', sans-serif;
@@ -116,108 +101,76 @@ body {}
   width: 100%;
   background-image: url(bakery.jpg);
   background-position: center;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .navigation {
   padding: 16px;
-  display:none;
-}
-
-.navigation__link {
-  display: block;
-  color: #000;
-  text-decoration: none;
-  padding: 16px 0 16px 0;
-  font-size: 32px;
-  font-family: 'Dancing Script', cursive;
-}
+  display: none; }
+  .navigation__link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 16px 0 16px 0;
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive; }
 
 .navigation__link:hover {
   color: #641c0ab9;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .navigation--open {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
+  align-items: center; }
 
 .recipes {
   grid-area: recipes;
-  background-color: rgba(214, 159, 159, 0.5);
-}
+  background-color: rgba(214, 159, 159, 0.5); }
 
 .section {
   padding: 16px;
   text-align: left;
-  min-height: 10vh;
-}
+  min-height: 10vh; }
 
 .sourdough {
   grid-area: sourdough;
-  background-color: rgba(214, 159, 159, 0.5);
-}
+  background-color: rgba(214, 159, 159, 0.5); }
 
 @media screen and (min-width: 768px) {
   .bread-menu {
-    display: none;
-  }
-  .header__heading {
-    font-size: 110px;
-  }
-  .header__paragraph {
-    font-size: 50px;
-  }
+    display: none; }
+  __heading {
+    font-size: 110px; }
+    __heading__paragraph {
+      font-size: 50px; }
   .fars {
     position: fixed;
-    font-size: 2rem;
-  }
+    font-size: 2rem; }
   .navigation {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-}
-
-.navigation__link {
-  padding:0 16px 0 16px;
-}
-
-
-.dashed {
-  border-bottom: 3px dotted rgba(218, 13, 13, 0.5);
-  position: sticky;
-  top: 110px;
-}
-
-
+    align-items: center; }
+    .navigation__link {
+      padding: 0 16px 0 16px; }
+  .dashed {
+    border-bottom: 6px dotted rgba(218, 13, 167, 0.918);
+    position: sticky;
+    top: 60px; } }
 
 @media screen and (min-width: 1024px) {
   .header__heading {
-    font-size: 150px;
-  }
+    font-size: 150px; }
   .header__paragraph {
-    font-size: 65px;
-  }
+    font-size: 65px; }
   .fars {
-    font-size: 2.5rem;
-    
-  }
-}
+    font-size: 2.5rem; } }
 
 @media screen and (min-width: 1440px) {
   .header__heading {
-    font-size: 170px;
-  }
+    font-size: 170px; }
   .header__paragraph {
-    font-size: 80px;
-  }
+    font-size: 80px; }
   .fars {
-    font-size: 3rem;
-   
-  }
-}
+    font-size: 3rem; } }
