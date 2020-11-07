@@ -53,7 +53,7 @@ html {
     font-size: 80px;
     margin: 0;
     line-height: 1.1;
-    background-image: url(/graph/wypieki.png);
+    background-image: url(graph/wypieki.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
@@ -74,7 +74,7 @@ html {
 .headings {
   text-align: center;
   font-size: 30px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   margin: 0 16px 0 16px; }
   .headings::before {
     width: 10px;
@@ -98,7 +98,7 @@ html {
   margin: 8px; }
 
 .main {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 100vh;
@@ -117,7 +117,7 @@ html {
     text-decoration: none;
     padding: 16px 0 16px 0;
     font-size: 32px;
-    font-family: 'Dancing Script', cursive; }
+    font-family: "Dancing Script", cursive; }
   .navigation__link:hover {
     color: #641c0ab9;
     font-weight: bold; }
