@@ -14,13 +14,12 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous"
         >
-       
     </head>
-  
     <body id="top">
-    
         <header class="header__navigation">
-            <button class="bread-menu bread-menu--js" aria-label="Otwórz menu"><img src="graph/mini-bread.png"/></button>
+            <button class="bread-menu bread-menu--js" aria-label="Otwórz menu">
+                <img src="graph/mini-bread.png">
+            </button>
             <nav class="navigation navigation--js">
                 <a class="navigation__link" href="index.html">Home</a>
                 <a class="navigation__link" href="#about">O nas</a>
@@ -36,16 +35,22 @@
         <div class="dashed"></div>
         <main class="main">
             <section class="about section" id="about">
-                <h2 class="about__heading headings">O nas</h3>
+                <h2 class="about__heading headings">
+                    O nas
+                </h3>
                 <article class="about__article">
-                    <h3 class="about__article-heading little-headings">Krótka historia chleba</h4>
+                    <h3 class="about__article-heading little-headings">
+                        Krótka historia chleba
+                    </h4>
                     <p class="about__description">
                         Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje
               Cie to, kim jestem, to możesz poczytać.
                     </p>
                 </article>
                 <article class="about__article">
-                    <h3 class="about__article-heading little-headings">Moja krótka historia</h4>
+                    <h3 class="about__article-heading little-headings">
+                        Moja krótka historia
+                    </h4>
                     <p class="about__description">
                         Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje
               Cie to, kim jestem, to możesz poczytać.
@@ -54,14 +59,20 @@
             </section>
             <div class="clown"></div>
             <section class="sourdough section" id="sourdough">
-                <h2 class="sourdough__heading headings">Co nieco o zakwasie</h3>
+                <h2 class="sourdough__heading headings">
+                    Co nieco o zakwasie
+                </h3>
                 <article class="sourdough__article">
-                    <h3 class="sourdough__article-heading little-headings">Zakwas faza 1</h4>
+                    <h3 class="sourdough__article-heading little-headings">
+                        Zakwas faza 1
+                    </h4>
                     <p class="sourdough__description">
                         W tym tygodniu raczej nie dużo się dzieje, ale zobacze jak dużo
               nauki było już w trzecim tygodniu
                     </p>
-                    <h3 class="sourdough__article-heading little-headings">Zakwas faza 2</h4>
+                    <h3 class="sourdough__article-heading little-headings">
+                        Zakwas faza 2
+                    </h4>
                     <p class="sourdough__description">
                         W tym tygodniu raczej nie dużo się dzieje, ale zobacze jak dużo
               nauki było już w trzecim tygodniu
@@ -69,16 +80,22 @@
                 </article>
             </section>
             <section class="recipes section" id="recipes">
-                <h2 class="recipes__heading headings">O chlebie i o mnie</h3>
+                <h2 class="recipes__heading headings">
+                    O chlebie i o mnie
+                </h3>
                 <article class="recipes__article">
-                    <h3 class="recipes__article-heading little-headings">Krótka historia chleba</h4>
+                    <h3 class="recipes__article-heading little-headings">
+                        Krótka historia chleba
+                    </h4>
                     <p class="recipes__description">
                         Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje
               Cie to, kim jestem, to możesz poczytać.
                     </p>
                 </article>
                 <article class="recipes__article">
-                    <h3 class="recipes__article-heading little-headings">Moja krótka historia</h4>
+                    <h3 class="recipes__article-heading little-headings">
+                        Moja krótka historia
+                    </h4>
                     <p class="recipes__description">
                         Taki sobie człowiek. Żyje i oddycham. Jeśli na serio interesuje
               Cie to, kim jestem, to możesz poczytać.
@@ -86,7 +103,39 @@
                     <p class="recipes__description recipes__description--js"></p>
                 </article>
             </section>
-            <section class="contact section" id="contact">Kontakt</section>
+            <section class="contact section" id="contact">
+                <h2 class="contact__heading">Masz pytania? Chcesz podzielić się swoją historią? Skontaktuj się ze mną:</h2>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Kontakt</legend>
+                    <p>
+                        <label for="firstName"class="firstName">
+                            Twoje imię
+                            <input
+                                class="firstName__input"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Wpisz proszę swoje imię"
+                            >
+                        </label>
+                    </p>
+                    <p>
+                        <label for="email" class="email">
+                            Twój email
+                            <input
+                                class="email__input"
+                                id="email"
+                                name="email"
+                                placeholder="Tu proszę wpisz swój email"
+                                type="email"
+                            >
+                        </label>
+                    </p>
+                    <p>
+                        <label for="yourMessage" class="yourMessage">Twoja wiadomość</label>
+                        <textarea id="yourMessage" name="yourMessage" class="yourMessage__textarea">Wpisz proszę swoją wiadomość</textarea>
+                    </p>
+                </fieldset>
+            </section>
         </main>
         <div class="fars">
             <a href="#top">
@@ -96,7 +145,6 @@
         <footer class="footer">
             Made by PrzemO2020
         </footer>
-        
     </body>
     <script src="main.js"></script>
 </html>

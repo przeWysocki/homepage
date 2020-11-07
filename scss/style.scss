@@ -8,6 +8,8 @@ html {
   box-sizing: inherit;
 }
 
+$dancingFont: "Dancing Script", cursive;
+
 .about {
   grid-area: about;
   background-color: rgba(214, 159, 159, 0.5);
@@ -28,6 +30,25 @@ html {
 .contact {
   grid-area: contact;
   background-color: rgba(214, 159, 159, 0.781);
+  &__heading {
+    margin-top:100px;
+    text-align:center;
+    font-family: $dancingFont;
+    font-size:36px;
+  }
+  &__fieldset {
+    margin:48px auto 0 auto; 
+    display:block;
+    text-align:center;
+    max-width:600px
+  }
+
+  &__legend {
+    font-family: $dancingFont;
+    font-size:32px;
+   
+    
+  }
 }
 
 .fars {
@@ -193,7 +214,7 @@ html {
   }
 
   .dashed {
-    border-bottom: 6px dotted rgba(218, 13, 167, 0.918);
+    border-bottom: 6px dotted #b47777;
     position: sticky;
     top: 80px;
   }
