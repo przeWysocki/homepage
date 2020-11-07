@@ -1,0 +1,224 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.about {
+  grid-area: about;
+  background-color: rgba(214, 159, 159, 0.5);
+  &__:hover {
+    opacity: 75%;
+  }
+}
+
+.bread-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: rgba(214, 159, 159, 0.781);
+}
+
+.fars {
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 36px;
+  right: 24px;
+}
+
+.fa {
+  color: black;
+}
+
+.footer {
+  background-color: #312402;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  margin-bottom: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+  &__heading {
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 80px;
+    margin: 0;
+    line-height: 1.1;
+    background-image: url(/graph/wypieki.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__paragraph {
+    color: #000;
+    text-align: center;
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+  }
+}
+
+.header__navigation {
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(20px);
+}
+
+.headings {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  margin: 0 16px 0 16px;
+  &::before {
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-right: 32px;
+  }
+  &::after {
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-left: 32px;
+  }
+}
+
+.little-headings {
+  text-align: center;
+  margin: 8px;
+}
+
+.main {
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 100vh;
+  grid-template-areas: "about" "clown" "sourdough" "nose" "recipes" "tits" "contact";
+  width: 100%;
+  background-image: url(bakery.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.navigation {
+  padding: 16px;
+  display: none;
+  &__link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 16px 0 16px 0;
+    font-size: 32px;
+    font-family: "Dancing Script", cursive;
+  }
+  &__link:hover {
+    color: #641c0ab9;
+    font-weight: bold;
+  }
+}
+
+.navigation--open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipes {
+  grid-area: recipes;
+  background-color: rgba(214, 159, 159, 0.5);
+}
+
+.section {
+  padding: 16px;
+  text-align: left;
+  min-height: 10vh;
+}
+
+.sourdough {
+  grid-area: sourdough;
+  background-color: rgba(214, 159, 159, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .bread-menu {
+    display: none;
+  }
+  .header__heading {
+    font-size: 110px;
+  }
+  .header__paragraph {
+    font-size: 50px;
+  }
+
+  .fars {
+    position: fixed;
+    font-size: 2rem;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__link {
+      padding: 0 16px 0 16px;
+    }
+  }
+
+  .dashed {
+    border-bottom: 6px dotted rgba(218, 13, 167, 0.918);
+    position: sticky;
+    top: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__heading {
+    font-size: 150px;
+  }
+  .header__paragraph {
+    font-size: 65px;
+  }
+  .fars {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header__heading {
+    font-size: 170px;
+  }
+  .header__paragraph {
+    font-size: 80px;
+  }
+  .fars {
+    font-size: 3rem;
+  }
+}
