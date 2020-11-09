@@ -30,24 +30,26 @@ $dancingFont: "Dancing Script", cursive;
 .contact {
   grid-area: contact;
   background-color: rgba(214, 159, 159, 0.781);
-  &__heading {
-    margin-top:100px;
-    text-align:center;
-    font-family: $dancingFont;
-    font-size:36px;
-  }
   &__fieldset {
-    margin:48px auto 0 auto; 
-    display:block;
-    text-align:center;
-    max-width:600px
+    margin: 24px auto 0 auto;
+    display: block;
+    text-align: center;
+    max-width: 600px;
   }
-
+  &__heading {
+    margin-top: 70px;
+    text-align: center;
+    font-family: $dancingFont;
+    font-size: 28px;
+  }
+  &__input {
+    min-width: 220px;
+    min-height: 48px;
+    font-size: 18px;
+  }
   &__legend {
     font-family: $dancingFont;
-    font-size:32px;
-   
-    
+    font-size: 24px;
   }
 }
 
@@ -62,12 +64,10 @@ $dancingFont: "Dancing Script", cursive;
   color: black;
 }
 
-.footer {
-  background-color: #312402;
-  color: #fff;
-  text-decoration: none;
+.firstName {
+  font-family: $dancingFont;
+  font-size:20px;
 }
-
 .header {
   margin-bottom: 16px;
   min-height: 100vh;
@@ -130,6 +130,18 @@ $dancingFont: "Dancing Script", cursive;
   }
 }
 
+.firstName {
+  display: block;
+}
+
+.footer {
+  background-color: #312402;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  min-height: 60px;
+}
+
 .little-headings {
   text-align: center;
   margin: 8px;
@@ -139,7 +151,7 @@ $dancingFont: "Dancing Script", cursive;
   font-family: "Lato", sans-serif;
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 100vh;
+  grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 150vh;
   grid-template-areas: "about" "clown" "sourdough" "nose" "recipes" "tits" "contact";
   width: 100%;
   background-image: url(bakery.jpg);
@@ -187,6 +199,13 @@ $dancingFont: "Dancing Script", cursive;
   background-color: rgba(214, 159, 159, 0.5);
 }
 
+.yourMessage {
+  &__textarea {
+    min-width: 260px;
+    min-height: 300px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .bread-menu {
     display: none;
@@ -201,6 +220,10 @@ $dancingFont: "Dancing Script", cursive;
   .fars {
     position: fixed;
     font-size: 2rem;
+  }
+
+  .main {
+    grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 150vh;
   }
 
   .navigation {
@@ -229,6 +252,9 @@ $dancingFont: "Dancing Script", cursive;
   }
   .fars {
     font-size: 2.5rem;
+  }
+  .main {
+    grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 130vh;
   }
 }
 

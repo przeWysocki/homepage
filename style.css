@@ -23,19 +23,23 @@ html {
 .contact {
   grid-area: contact;
   background-color: rgba(214, 159, 159, 0.781); }
-  .contact__heading {
-    margin-top: 100px;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 36px; }
   .contact__fieldset {
-    margin: 48px auto 0 auto;
+    margin: 24px auto 0 auto;
     display: block;
     text-align: center;
     max-width: 600px; }
+  .contact__heading {
+    margin-top: 70px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 28px; }
+  .contact__input {
+    min-width: 220px;
+    min-height: 48px;
+    font-size: 18px; }
   .contact__legend {
     font-family: "Dancing Script", cursive;
-    font-size: 32px; }
+    font-size: 24px; }
 
 .fars {
   font-size: 1.5rem;
@@ -46,10 +50,9 @@ html {
 .fa {
   color: black; }
 
-.footer {
-  background-color: #312402;
-  color: #fff;
-  text-decoration: none; }
+.firstName {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px; }
 
 .header {
   margin-bottom: 16px;
@@ -106,6 +109,16 @@ html {
     content: "";
     margin-left: 32px; }
 
+.firstName {
+  display: block; }
+
+.footer {
+  background-color: #312402;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  min-height: 60px; }
+
 .little-headings {
   text-align: center;
   margin: 8px; }
@@ -114,7 +127,7 @@ html {
   font-family: "Lato", sans-serif;
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 100vh;
+  grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 150vh;
   grid-template-areas: "about" "clown" "sourdough" "nose" "recipes" "tits" "contact";
   width: 100%;
   background-image: url(bakery.jpg);
@@ -154,6 +167,10 @@ html {
   grid-area: sourdough;
   background-color: rgba(214, 159, 159, 0.5); }
 
+.yourMessage__textarea {
+  min-width: 260px;
+  min-height: 300px; }
+
 @media screen and (min-width: 768px) {
   .bread-menu {
     display: none; }
@@ -164,6 +181,8 @@ html {
   .fars {
     position: fixed;
     font-size: 2rem; }
+  .main {
+    grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 150vh; }
   .navigation {
     display: flex;
     flex-direction: row;
@@ -182,7 +201,9 @@ html {
   .header__paragraph {
     font-size: 65px; }
   .fars {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .main {
+    grid-template-rows: 100vh 64px 100vh 64px 100vh 64px 130vh; } }
 
 @media screen and (min-width: 1440px) {
   .header__heading {
